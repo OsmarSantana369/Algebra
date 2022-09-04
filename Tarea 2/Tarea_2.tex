@@ -1,10 +1,13 @@
 \documentclass[fleqn]{article}
 \usepackage{amsmath, amssymb}
-\usepackage[spanish]{babel}
+\usepackage[spanish, english]{babel}
 \usepackage{parskip}
 \usepackage[a4paper, margin=3cm]{geometry}
+\renewcommand{\theenumii}{\textit{\roman{enumii}}}   %Redefinir los simbolos de lista con minúsculas romana, (es necesario cargar el idioma inglés)
+\renewcommand{\labelenumii}{{\theenumii}.}   %Poner un punto despúes del símbolo de lista
 
 \begin{document}
+    %Portada
     \begin{titlepage}
         \centering
         {\Huge \textbf{Universidad Autónoma del Estado de México}\par}
@@ -21,7 +24,7 @@
 
         {\huge \textbf{Profesora:}\par}
         \vspace{0.3cm}
-        {\huge Socorro López Olvera}\par
+        {\huge \textsl{Socorro López Olvera}}\par
         \vspace{0.7cm}
 
         {\huge \textbf{Tarea 2}\par}
@@ -29,9 +32,10 @@
 
         {\huge \textbf{Alumnos:}\par}
         \vspace{0.3cm}
-        {\huge Peña Mateos Jesús Jacob}\par
-        {\huge Santana Reyes Osmar Dominique}\par
-        {\huge Gallegos Torres Gonzalo}\par
+        {\huge \textsl{Peña Mateos Jesús Jacob}}\par
+        \vspace{1.5mm}
+        {\huge \textsl{Santana Reyes Osmar Dominique}}\par
+        {\huge \textsl{Gallegos Torres Gonzalo}}\par
         \vspace{1.8cm}
 
         {\huge \textbf{Semestre: 2022B}\par}
@@ -41,8 +45,56 @@
     \end{titlepage}
 
     \begin{enumerate}
+        %Ejercicio 1
         \item Diga si las siguientes proposiciones son falsas o verdaderas y justifique su respuesta.
+    
+        \begin{enumerate}
+            %Inciso i
+            \item La matriz identidad es una matriz triangular superior. \par
+            Af! La matriz identidad es una matriz triangular superior. \par
+            \hspace{2.7mm}Dem.\par
+            Por definicion, $ I_n = [a_{ij}] \;\; \forall \, i = j $
+
+
+
+            %Inciso ii
+            \item Si $ V $ es un $ K $ \textsl{- espacio vectorial}, $ W \leq V $ y $ U \leq W $ entonces $ U \leq V $.
+            
+            %Inciso iii
+            \item Si $ A $ es una matriz con $ tr(A) = 0 $, entonces $ A $ es matriz antisimétrica. 
+        \end{enumerate}
+
+        %Ejercicio 2
         \item Sean $ n \in \mathbb{N} $, $ K $ un campo, $ A \in M_n[K] $ y $ A^t $ su transpuesta.
+        
+        \begin{enumerate}
+            %Inciso i
+            \item Demuestra que $ A + A^t $ es una matriz simétrica.
+            
+            %Inciso ii
+            \item Sea $ U = \left \{A \in M_n [K] \; \middle \arrowvert \; A \text{ es antisimétrica} \right \} \subseteq M_n [K] $. Demuestre que $ U \leq M_n[K] $.
+            
+            %Inciso iii
+            \item ¿Cuántas entradas diferentes puede tener una matriz simétrica de orden $ n $? Argumente su respuesta.
+        \end{enumerate}
+
+        %Ejercicio 3
+        \item Demuestre el corolario 13.
+        
+        %Ejercicio 4
+        \item Sea $ V $ un $ K $ \textsl{- espacio vectorial} y $ W \subseteq V $ no vacío. Demuestre que $ W \leq V $, si y solo si se cumple:
+        
+        \begin{enumerate}
+            %Inciso i
+            \item $ u - z \in W $ para cualesquiera $ u, \, z \in W $.
+            
+            %Inciso ii
+            \item $ \lambda u \in W $, $ \forall \, \lambda \in K $ y $ \forall \, u \in W $.
+        \end{enumerate}
+
+        %Ejercicio 5
+        \item Sean $ V = \mathbb{R}^3 $, un $ \mathbb{R} $ \textsl{- espacio vectorial}, con las operaciones usuales de suma y producto por escalar, $ W_1 $ y $ W_2 $ subconjuntos de $ V $, definidos como, $ W_1 = \left \{(a,b,c) \in \mathbb{R}^3 \middle \arrowvert 3a-b+4c=0 \right \} $ y $ W_2 = \left \{(a,b,c) \in \mathbb{R}^3 \middle \arrowvert b=-a, 2c=a \right \} $ ¿Es $ V = W_1 \, \oplus \, W_2 $? Demuéstrelo o dé un contraejemplo de la propiedad que no se cumpla.
+        
     \end{enumerate}
 
 \end{document}
