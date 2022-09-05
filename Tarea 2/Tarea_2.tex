@@ -1,7 +1,7 @@
 \documentclass[fleqn]{article}
 \usepackage{amsmath, amssymb}
-\usepackage[spanish, english]{babel}
-\usepackage{parskip}
+\usepackage[spanish]{babel}
+\usepackage{parskip, nopageno}
 \usepackage[a4paper, margin=3cm]{geometry}
 \renewcommand{\theenumii}{\textit{\roman{enumii}}}   %Redefinir los simbolos de lista con minúsculas romana, (es necesario cargar el idioma inglés)
 \renewcommand{\labelenumii}{{\theenumii}.}   %Poner un punto despúes del símbolo de lista
@@ -45,23 +45,80 @@
     \end{titlepage}
 
     \begin{enumerate}
+        \bfseries
         %Ejercicio 1
         \item Diga si las siguientes proposiciones son falsas o verdaderas y justifique su respuesta.
     
         \begin{enumerate}
             %Inciso i
             \item La matriz identidad es una matriz triangular superior. \par
-            Af! La matriz identidad es una matriz triangular superior. \par
-            \hspace{2.7mm}Dem.\par
-            Por definicion, $ I_n = [a_{ij}] \;\; \forall \, i = j $
-
-
+            \normalfont
+            \textbf{Af:} La matriz identidad es una matriz triangular superior. \par
+            \hspace{2.7mm}\textbf{Dem.}\par
+            Sea $ I_n = [a_{ij}] $ la matriz identidad. Por definición, 
+            \begin{equation*}
+                I_n = 
+                \begin{pmatrix}
+                    1      & 0      & \cdots & 0\\ 
+                    0      & 1      & \cdots & 0\\
+                    \vdots & \vdots & \ddots & \vdots\\
+                    0      & 0      & \cdots & 1
+                \end{pmatrix}
+            \end{equation*}
+            Ya que $ a_{ij} = 0 \;\, \forall \, i > j $, entonces $ I_n $ es una matriz triangular superior, por definición. $ \blacksquare $ \par
 
             %Inciso ii
-            \item Si $ V $ es un $ K $ \textsl{- espacio vectorial}, $ W \leq V $ y $ U \leq W $ entonces $ U \leq V $.
-            
+            \bfseries
+            \item Si $ V $ es un $ K $ \textsl{- espacio vectorial}, $ W \leq V $ y $ U \leq W $ entonces $ U \leq V $. \par
+            \normalfont
+            \textbf{Af:} $ U \leq V $. \par
+            \hspace{2.7mm}\textbf{Dem.} \par
+            Como $ W \leq V $ y $ U \leq W $ entonces $ W \subseteq V $ y $ U \subseteq W $. De esta menera, como $ U \subseteq W $ y $ W \subseteq V $, entonces $ U \subseteq V $. \par
+            Luego, sea $ \overline{0} \in V $ el neutro aditivo. Como $ W \leq V $ entonces $ \overline{0} \in W $, por el inciso \textit{i} de la proposición 5. Y ya que $ U \leq W $ entonces $ \overline{0} \in U $, por el inciso \textit{i} de la proposición 5. \par
+            Después, como $ W \leq V $ entonces la adición es cerrada en $ W $, por el inciso \textit{ii} de la proposición 5. Y ya que $ U \leq W $ entonces la adición es cerrada en $ U $, por el inciso \textit{ii} de la proposición 5. \par
+            Y finalmente, como $ W \leq V $ entonces el producto por escalar es cerrado en $ W $, por el inciso \textit{iii} de la proposición 5. Y ya que $ U \leq W $ entonces el producto por escalar es cerrado en $ U $, por el inciso \textit{iii} de la proposición 5. \par
+            En conclusión, como $ \overline{0} \in U $, la adición es cerrada en $ U $ y el producto por escalar es cerrado en $ U $, entonces $ U \leq V $, por la proposición 5. $ \blacksquare $ \par
+
             %Inciso iii
-            \item Si $ A $ es una matriz con $ tr(A) = 0 $, entonces $ A $ es matriz antisimétrica. 
+            \bfseries
+            \item Si $ A $ es una matriz con $ tr(A) = 0 $, entonces $ A $ es matriz antisimétrica. \par
+            \normalfont
+            \textbf{Af:} $ A $ no es matriz antisimétrica. \par
+            \hspace{2.7mm}\textbf{Dem.} \par
+            Considerando la matriz
+            \begin{equation*}
+                A =
+                \begin{pmatrix}
+                    1  & 5  & 7\\
+                    -5 & -1 & 9\\
+                    -7 & -9 & 0
+                \end{pmatrix}
+            \end{equation*}
+            Por definición, la traza de A es $ tr(A) = 1 + (-1) + 0 = 0 $. Así, $ tr(A) = 0 $. \par
+            Luego,
+            \begin{equation*}
+                A^t =
+                \begin{pmatrix}
+                    1 & -5 & -7\\
+                    5 & -1 & -9\\
+                    7 & 9  & 0
+                \end{pmatrix}
+                \quad \text{y} \quad -A =
+                \begin{pmatrix}
+                    -1 & -5 & -7\\
+                    5  & 1  & -9\\
+                    7  & 9  & -0
+                \end{pmatrix}
+                =
+                \begin{pmatrix}
+                    -1 & -5 & -7\\
+                    5  & 1  & -9\\
+                    7  & 9  & 0
+                \end{pmatrix}
+            \end{equation*}
+
+            Como $ A^t \neq -A $ entonces la matriz $ A $ no es transpuesta. Por lo tanto, no es cierto que si $ A $ es una matriz con $ tr(A) = 0 $, entonces $ A $ es matriz antisimétrica. $ \blacksquare $ \par
+
         \end{enumerate}
 
         %Ejercicio 2

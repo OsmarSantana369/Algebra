@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.25)  4 SEP 2022 14:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.25)  4 SEP 2022 21:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -126,18 +126,7 @@ Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
 Package babel Info: Making > an active character on input line 722.
-) (C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: Hyphen rules for 'canadian' set to \l@english
-(babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language73). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language73). Reported on input line 108.
-)) (C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-english.tex
-Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 11.
-) (C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
+)) (C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
 ) (C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
@@ -154,7 +143,9 @@ Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )) (C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count274
-)) (C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+)) (C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex/latex/nopageno\nopageno.sty
+Package: nopageno 1989/01/01 no page numbers (DPC)
+) (C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
@@ -177,7 +168,10 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count278
 \l__pdf_internal_box=\box53
-) (c:\Users\CONTROL\Desktop\Algebra\Tarea 2\build\Tarea_2.aux)
+) (c:\Users\CONTROL\Desktop\Algebra\Tarea 2\build\Tarea_2.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+)
 \openout1 = `Tarea_2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -194,6 +188,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -232,26 +228,103 @@ LaTeX Font Info:    ... okay on input line 9.
 [1
 
 {C:/Users/CONTROL/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
- (C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/scit' undefined
+(Font)              using `OT1/cmr/bx/sc' instead on input line 54.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
+(Font)              using `OT1/cmr/bx/n' instead on input line 54.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 54.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
+(C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
  (C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1] (c:\Users\CONTROL\Desktop\Algebra\Tarea 2\build\Tarea_2.aux) ) 
+)
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/scit' undefined
+(Font)              using `OT1/cmr/bx/sc' instead on input line 72.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 72.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/scit' undefined
+(Font)              using `OT1/cmr/bx/sc' instead on input line 84.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 84.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/scit' undefined
+(Font)              using `OT1/cmr/bx/sc' instead on input line 129.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 129.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/scit' undefined
+(Font)              using `OT1/cmr/bx/sc' instead on input line 132.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 132.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/scit' undefined
+(Font)              using `OT1/cmr/bx/sc' instead on input line 135.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 135.
+
+[1]
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/scit' undefined
+(Font)              using `OT1/cmr/bx/sc' instead on input line 146.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 146.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/scit' undefined
+(Font)              using `OT1/cmr/bx/sc' instead on input line 149.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 149.
+
+[2] (c:\Users\CONTROL\Desktop\Algebra\Tarea 2\build\Tarea_2.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4393 strings out of 478354
- 70515 string characters out of 2836174
- 392595 words of memory out of 3000000
- 22778 multiletter control sequences out of 15000+600000
- 473520 words of font info for 44 fonts, out of 8000000 for 9000
+ 4432 strings out of 478354
+ 70648 string characters out of 2836174
+ 401939 words of memory out of 3000000
+ 22818 multiletter control sequences out of 15000+600000
+ 474812 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,62p,585b,363s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:\Users\CONTROL\Desktop\Algebra\Tarea 2\build\Tarea_2.pdf" (2 pages, 138596 bytes).
+ 55i,11n,62p,585b,363s stack positions out of 10000i,1000n,20000p,200000b,80000s
+<C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "c:\Users\CONTROL\Desktop\Algebra\Tarea 2\build\Tarea_2.pdf" (3 pages, 177114 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
+ 87 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
