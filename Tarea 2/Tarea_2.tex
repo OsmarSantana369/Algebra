@@ -3,7 +3,7 @@
 \usepackage[spanish]{babel}
 \usepackage{parskip, nopageno}
 \usepackage[a4paper, margin=3cm]{geometry}
-\renewcommand{\theenumii}{\textit{\roman{enumii}}}   %Redefinir los simbolos de lista con minúsculas romana, (es necesario cargar el idioma inglés)
+\renewcommand{\theenumii}{\roman{enumii}}   %Redefinir los simbolos de lista con minúsculas romana, (es necesario cargar el idioma inglés)
 \renewcommand{\labelenumii}{{\theenumii}.}   %Poner un punto despúes del símbolo de lista
 
 \begin{document}
@@ -52,9 +52,12 @@
         \begin{enumerate}
             %Inciso i
             \item La matriz identidad es una matriz triangular superior. \par
+            
             \normalfont
             \textbf{Af:} La matriz identidad es una matriz triangular superior. \par
+
             \hspace{2.7mm}\textbf{Dem.}\par
+
             Sea $ I_n = [a_{ij}] $ la matriz identidad. Por definición, 
             \begin{equation*}
                 I_n = 
@@ -70,21 +73,31 @@
             %Inciso ii
             \bfseries
             \item Si $ V $ es un $ K $ \textsl{- espacio vectorial}, $ W \leq V $ y $ U \leq W $ entonces $ U \leq V $. \par
+            
             \normalfont
             \textbf{Af:} $ U \leq V $. \par
+
             \hspace{2.7mm}\textbf{Dem.} \par
+
             Como $ W \leq V $ y $ U \leq W $ entonces $ W \subseteq V $ y $ U \subseteq W $. De esta menera, como $ U \subseteq W $ y $ W \subseteq V $, entonces $ U \subseteq V $. \par
+
             Luego, sea $ \overline{0} \in V $ el neutro aditivo. Como $ W \leq V $ entonces $ \overline{0} \in W $, por el inciso \textit{i} de la proposición 5. Y ya que $ U \leq W $ entonces $ \overline{0} \in U $, por el inciso \textit{i} de la proposición 5. \par
+
             Después, como $ W \leq V $ entonces la adición es cerrada en $ W $, por el inciso \textit{ii} de la proposición 5. Y ya que $ U \leq W $ entonces la adición es cerrada en $ U $, por el inciso \textit{ii} de la proposición 5. \par
+
             Y finalmente, como $ W \leq V $ entonces el producto por escalar es cerrado en $ W $, por el inciso \textit{iii} de la proposición 5. Y ya que $ U \leq W $ entonces el producto por escalar es cerrado en $ U $, por el inciso \textit{iii} de la proposición 5. \par
+
             En conclusión, como $ \overline{0} \in U $, la adición es cerrada en $ U $ y el producto por escalar es cerrado en $ U $, entonces $ U \leq V $, por la proposición 5. $ \blacksquare $ \par
 
             %Inciso iii
             \bfseries
             \item Si $ A $ es una matriz con $ tr(A) = 0 $, entonces $ A $ es matriz antisimétrica. \par
+            
             \normalfont
             \textbf{Af:} $ A $ no es matriz antisimétrica. \par
+
             \hspace{2.7mm}\textbf{Dem.} \par
+
             Considerando la matriz
             \begin{equation*}
                 A =
@@ -116,7 +129,6 @@
                     7  & 9  & 0
                 \end{pmatrix}
             \end{equation*}
-
             Como $ A^t \neq -A $ entonces la matriz $ A $ no es transpuesta. Por lo tanto, no es cierto que si $ A $ es una matriz con $ tr(A) = 0 $, entonces $ A $ es matriz antisimétrica. $ \blacksquare $ \par
 
         \end{enumerate}
@@ -150,7 +162,62 @@
         \end{enumerate}
 
         %Ejercicio 5
-        \item Sean $ V = \mathbb{R}^3 $, un $ \mathbb{R} $ \textsl{- espacio vectorial}, con las operaciones usuales de suma y producto por escalar, $ W_1 $ y $ W_2 $ subconjuntos de $ V $, definidos como, $ W_1 = \left \{(a,b,c) \in \mathbb{R}^3 \middle \arrowvert 3a-b+4c=0 \right \} $ y $ W_2 = \left \{(a,b,c) \in \mathbb{R}^3 \middle \arrowvert b=-a, 2c=a \right \} $ ¿Es $ V = W_1 \, \oplus \, W_2 $? Demuéstrelo o dé un contraejemplo de la propiedad que no se cumpla.
+        \item Sean $ V = \mathbb{R}^3 $, un $ \mathbb{R} $ \textsl{- espacio vectorial}, con las operaciones usuales de suma y producto por escalar, $ W_1 $ y $ W_2 $ subconjuntos de $ V $, definidos como, $ W_1 = \left \{(a,b,c) \in \mathbb{R}^3 \middle \arrowvert 3a - b + 4c = 0 \right \} $ y $ W_2 = \left \{(a,b,c) \in \mathbb{R}^3 \middle \arrowvert b=-a, 2c=a \right \} $ ¿Es $ V = W_1 \, \oplus \, W_2 $? Demuéstrelo o dé un contraejemplo de la propiedad que no se cumpla.
+        
+        \normalfont
+        \textbf{Af:} $ V = W_1 \, \oplus \, W_2 $. \par
+
+        \hspace{2.7mm}\textbf{Dem.} \par
+
+        \begin{minipage}[c]{0.7cm}
+            \vspace{-1.7cm} P.d. 
+        \end{minipage} \begin{minipage}[b]{9cm}
+            \begin{enumerate}
+                \item[a)] $ W_1 $ y $ W_2 $ son subespacios vectoriales de $ V $. 
+                \item[b)] $ V = W_1 + W_2 $
+                \item[c)] $ W_1 \cap W_2 = \left \{\overline{0} \right \} $
+            \end{enumerate}
+        \end{minipage}
+        
+        \begin{enumerate}
+            \item[a)] $ W_1 $ y $ W_2 $ son subespacios vectoriales de $ V $. \par
+            Como $ \overline{0} = (0,0,0) $ es el neutro aditivo en $ V $, entonces $ \overline{0} \in W_1 $ pues $ 3(0) - 0 + 4(0) = 0 - 0 + 0 = 0 $. Y también $ \overline{0} \in W_2 $ pues $ 0 = -0 $ y $ 2(0) = 0 $. \par
+
+            Luego, sean $ (a_1,b_1,c_1), (d_1,e_1,f_1) \in W_1 $ entonces $ 3a_1 - b_1 + 4c_1 = 0 $ y $ 3d_1 - e_1 + 4f_1 = 0 $. Por definición de suma en $ \mathbb{R}^3 $ se tiene que \par
+
+            $ (a_1,b_1,c_1) + (d_1,e_1,f_1) = (a_1+d_1, \, b_1+e_1, \, c_1+f_1) $ \par
+
+            Y como
+            \begin{align*}
+                3(a_1+d_1) - (b_1+e_1) + 4(c_1+f_1) =& \; (3a_1 + 3d_1) + (- b_1 - e_1) + (4c_1 + 4f_1) \\
+                =& \; (3a_1 - b_1 + 4c_1) + (3d_1 - e_1 + 4f_1) \\
+                =& \; 0 + 0 \\
+                & (\text{pues } 3a_1 - b_1 + 4c_1 = 0 \text{ y } 3d_1 - e_1 + 4f_1 = 0) \\
+                =& \; 0
+            \end{align*}
+            entonces $ (a_1,b_1,c_1) + (d_1,e_1,f_1) \in W_1 $.
+
+            Después, sea $ (a_2,b_2,c_2) \in W_2 $ entonces $ b_2 = -a_2 $ y $ 2c_2 = a_2 $. Y sea $ (d_2,e_2,f_2) \in W_2 $ entonces $ e_2 = -d_2 $ y $ 2f_2 = a_2 $. Por definición de suma en $ \mathbb{R}^3 $ se tiene que \par
+
+            $ (a_2,b_2,c_2) + (d_2,e_2,f_2) = (a_2 + d_2, \, b_2 + e_2, \, c_2 + f_2) $ \par
+
+            Y como
+            \begin{align*}
+                b_2 + e_2 =& \; -a_2 + (-d_2) &(\text{pues } b_2 = -a_2 \text{ y } e_2 = -d_2) \\
+                =& \; -(a_2 + d_2) \\\\
+                2(c_2 + f_2) =& \; 2c_2 + 2f_2 \\
+                =& \; a_2 + a_2 &(\text{pues } 2c_2 = a_2 \text{ y } 2f_2 = a_2) \\
+                =& \; 2a_2
+            \end{align*}
+            entonces $ (a_2,b_2,c_2) + (d_2,e_2,f_2) \in W_2 $. \par
+
+            Ahora, sea 
+            
+            
+
+        \end{enumerate}
+        
+        
         
     \end{enumerate}
 

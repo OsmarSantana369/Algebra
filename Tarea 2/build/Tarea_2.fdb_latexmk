@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1662344671 "c:/Users/CONTROL/Desktop/Algebra/Tarea 2/Tarea_2.tex" "build/Tarea_2.pdf" "Tarea_2" 1662344675
+["pdflatex"] 1662440385 "c:/Users/CONTROL/Desktop/Algebra/Tarea 2/Tarea_2.tex" "build/Tarea_2.pdf" "Tarea_2" 1662440390
   "C:/Users/CONTROL/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1662344511 89470 71d9926615af2e7496c290d29d290fc0 ""
   "C:/Users/CONTROL/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1656205869 10326951 4c20795a0ba3dfbd8250d5bdd3ba6426 ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
@@ -14,7 +14,6 @@
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx5.tfm" 1136768653 1332 f817c21a1ba54560425663374f1b651a ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx7.tfm" 1136768653 1336 3125ccb448c1a09074e3aa4a9832f130 ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbxsl10.tfm" 1136768653 1532 d8160fb2d5f634e769c9f972be05f829 ""
-  "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbxti10.tfm" 1136768653 1532 9162035f4e7176612125649e348e2195 ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsl12.tfm" 1136768653 1504 f280e6069e577ca4a981806c471fe65c ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
@@ -63,9 +62,9 @@
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1650429716 31067 89623bb5c412243bea4c601866f5e8c1 ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/tex/latex/nopageno/nopageno.sty" 923785200 947 32f9abe6276a11a5422e521974f546b6 ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/tex/latex/parskip/parskip.sty" 1615979760 4288 94714aa7f535440f33181fec52a31963 ""
-  "Tarea_2.tex" 1662344667 7325 194b4e1d40bd4e4f1535661c0a414d27 ""
-  "build/Tarea_2.aux" 1662344674 194 d12d2f42a1ce5499c2e0a2e2f9926e09 "pdflatex"
-  "c:/Users/CONTROL/Desktop/Algebra/Tarea 2/Tarea_2.tex" 1662344667 7325 194b4e1d40bd4e4f1535661c0a414d27 ""
+  "Tarea_2.tex" 1662440382 9903 0bbef36330cf514826f5e651af622095 ""
+  "build/Tarea_2.aux" 1662440389 194 d12d2f42a1ce5499c2e0a2e2f9926e09 "pdflatex"
+  "c:/Users/CONTROL/Desktop/Algebra/Tarea 2/Tarea_2.tex" 1662440382 9903 0bbef36330cf514826f5e651af622095 ""
   (generated)
   "build/Tarea_2.aux"
   "build/Tarea_2.log"

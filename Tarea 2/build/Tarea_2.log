@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.25)  4 SEP 2022 21:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.25)  5 SEP 2022 23:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -229,10 +229,6 @@ LaTeX Info: Redefining \% on input line 9.
 
 {C:/Users/CONTROL/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
-LaTeX Font Warning: Font shape `OT1/cmr/bx/scit' undefined
-(Font)              using `OT1/cmr/bx/sc' instead on input line 54.
-
-
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 (Font)              using `OT1/cmr/bx/n' instead on input line 54.
 
@@ -240,70 +236,47 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
 (spanish)                faked small caps on input line 54.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
 (C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
  (C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Font Warning: Font shape `OT1/cmr/bx/scit' undefined
-(Font)              using `OT1/cmr/bx/sc' instead on input line 72.
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 75.
 
 
 Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
-(spanish)                faked small caps on input line 72.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/scit' undefined
-(Font)              using `OT1/cmr/bx/sc' instead on input line 84.
+(spanish)                faked small caps on input line 94.
 
 
 Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
-(spanish)                faked small caps on input line 84.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/scit' undefined
-(Font)              using `OT1/cmr/bx/sc' instead on input line 129.
+(spanish)                faked small caps on input line 141.
 
 
 Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
-(spanish)                faked small caps on input line 129.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/scit' undefined
-(Font)              using `OT1/cmr/bx/sc' instead on input line 132.
+(spanish)                faked small caps on input line 144.
 
 
 Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
-(spanish)                faked small caps on input line 132.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/scit' undefined
-(Font)              using `OT1/cmr/bx/sc' instead on input line 135.
-
-
-Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
-(spanish)                faked small caps on input line 135.
+(spanish)                faked small caps on input line 147.
 
 [1]
 
-LaTeX Font Warning: Font shape `OT1/cmr/bx/scit' undefined
-(Font)              using `OT1/cmr/bx/sc' instead on input line 146.
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 158.
 
 
 Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
-(spanish)                faked small caps on input line 146.
+(spanish)                faked small caps on input line 161.
 
 
-LaTeX Font Warning: Font shape `OT1/cmr/bx/scit' undefined
-(Font)              using `OT1/cmr/bx/sc' instead on input line 149.
-
-
-Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
-(spanish)                faked small caps on input line 149.
+Overfull \hbox (9.47679pt too wide) detected at line 197
+[]
+ []
 
 [2] (c:\Users\CONTROL\Desktop\Algebra\Tarea 2\build\Tarea_2.aux
 LaTeX Info: Redefining \. on input line 8.
@@ -314,15 +287,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 4432 strings out of 478354
- 70648 string characters out of 2836174
- 401939 words of memory out of 3000000
+ 4431 strings out of 478354
+ 70634 string characters out of 2836174
+ 404936 words of memory out of 3000000
  22818 multiletter control sequences out of 15000+600000
- 474812 words of font info for 48 fonts, out of 8000000 for 9000
+ 474453 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,11n,62p,585b,363s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:\Users\CONTROL\Desktop\Algebra\Tarea 2\build\Tarea_2.pdf" (3 pages, 177114 bytes).
+Output written on "c:\Users\CONTROL\Desktop\Algebra\Tarea 2\build\Tarea_2.pdf" (3 pages, 180133 bytes).
 PDF statistics:
  87 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
