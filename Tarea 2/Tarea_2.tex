@@ -181,7 +181,7 @@
         
         \begin{enumerate}
             \item[a)] $ W_1 $ y $ W_2 $ son subespacios vectoriales de $ V $. \par
-            Como $ \overline{0} = (0,0,0) $ es el neutro aditivo en $ V $, entonces $ \overline{0} \in W_1 $ pues $ 3(0) - 0 + 4(0) = 0 - 0 + 0 = 0 $. Y también $ \overline{0} \in W_2 $ pues $ 0 = -0 $ y $ 2(0) = 0 $. \par
+            Como $ \overline{0} = (0,0,0) $ es el neutro aditivo en $ V $, entonces $ \overline{0} \in W_1 $ pues $ 3(0) - 0 + 4(0) = 0 - 0 + 0 = 0 $. \par
 
             Luego, sean $ (a_1,b_1,c_1), (d_1,e_1,f_1) \in W_1 $ entonces $ 3a_1 - b_1 + 4c_1 = 0 $ y $ 3d_1 - e_1 + 4f_1 = 0 $. Por definición de suma en $ \mathbb{R}^3 $ se tiene que \par
 
@@ -197,7 +197,23 @@
             \end{align*}
             entonces $ (a_1,b_1,c_1) + (d_1,e_1,f_1) \in W_1 $.
 
-            Después, sea $ (a_2,b_2,c_2) \in W_2 $ entonces $ b_2 = -a_2 $ y $ 2c_2 = a_2 $. Y sea $ (d_2,e_2,f_2) \in W_2 $ entonces $ e_2 = -d_2 $ y $ 2f_2 = a_2 $. Por definición de suma en $ \mathbb{R}^3 $ se tiene que \par
+            Después, sean $ \lambda \in \mathbb{R} $ y $ (a,b,c) \in W_1 $ entonces $ 3a - b + 4c = 0 $. Luego, por definición de producto por escalar, se tiene que \par
+
+            $ \lambda (a,b,c) = (\lambda a, \lambda b, \lambda c) $ \par
+
+            Y como
+            \begin{align*}
+                3\lambda a - \lambda b + 4 \lambda c =& \lambda (3a - b + 4c) \\
+                =& \lambda (0) &(\text{pues } 3a - b + 4c = 0) \\
+                =& 0
+            \end{align*}
+            entonces $ \lambda (a,b,c) \in W_1 $ \par
+
+            Como $ \overline{0} \in W_1 $, la suma y el producto por escalar son cerrados en $ W_1 $, entonces $ W_1 \leq V $, por la Proposición 5.
+            
+            Ahora, se tiene que $ \overline{0} \in W_2 $ pues $ 0 = -0 $ y $ 2(0) = 0 $.
+
+            Luego, sea $ (a_2,b_2,c_2) \in W_2 $ entonces $ b_2 = -a_2 $ y $ 2c_2 = a_2 $. Y sea $ (d_2,e_2,f_2) \in W_2 $ entonces $ e_2 = -d_2 $ y $ 2f_2 = d_2 $. Por definición de suma en $ \mathbb{R}^3 $ se tiene que \par
 
             $ (a_2,b_2,c_2) + (d_2,e_2,f_2) = (a_2 + d_2, \, b_2 + e_2, \, c_2 + f_2) $ \par
 
@@ -206,14 +222,31 @@
                 b_2 + e_2 =& \; -a_2 + (-d_2) &(\text{pues } b_2 = -a_2 \text{ y } e_2 = -d_2) \\
                 =& \; -(a_2 + d_2) \\\\
                 2(c_2 + f_2) =& \; 2c_2 + 2f_2 \\
-                =& \; a_2 + a_2 &(\text{pues } 2c_2 = a_2 \text{ y } 2f_2 = a_2) \\
-                =& \; 2a_2
+                =& \; a_2 + d_2 &(\text{pues } 2c_2 = a_2 \text{ y } 2f_2 = d_2)
             \end{align*}
             entonces $ (a_2,b_2,c_2) + (d_2,e_2,f_2) \in W_2 $. \par
 
-            Ahora, sea 
+            Después, sean $ \lambda \in \mathbb{R} $ y $ (d,e,f) \in W_2 $ entonces $ e = -d $ y $ 2f = d $. Luego, por definición de producto por escalar, se tiene que \par
+
+            $ \lambda (d,e,f) = (\lambda d, \lambda e, \lambda f) $ \par
+
+            Y como
+            \begin{align*}
+                \lambda e =& \lambda (-d)  &(\text{pues } e = -d) \\
+                =& - (\lambda d) &(\text{inciso 3 de la proposición 3}) \\\\
+                2 (\lambda f) =& \lambda (2f) \\
+                =& \lambda d &(\text{pues } 2f = d) 
+            \end{align*}
+            entonces $ \lambda (d,e,f) \in W_2 $ \par
+
+            Como $ \overline{0} \in W_2 $, la suma y el producto por escalar son cerrados en $ W_2 $, entonces $ W_2 \leq V $, por la Proposición 5. \par
+
+            \item[b)] $ V = W_1 + W_2 $ \par
             
-            
+            \begin{enumerate}
+                \item[$ \subseteq $]] Sea $ (a,b,c) \in \mathbb{R}^3 $. P.d. $ (a,b,c) \in W_1 + W_2 $. \par
+                
+            \end{enumerate}
 
         \end{enumerate}
         
