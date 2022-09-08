@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1662613504 "c:/Users/CONTROL/Desktop/Algebra/Tarea 2/Tarea_2.tex" "build/Tarea_2.pdf" "Tarea_2" 1662613507
+["pdflatex"] 1662614147 "c:/Users/CONTROL/Desktop/Algebra/Tarea 2/Tarea_2.tex" "build/Tarea_2.pdf" "Tarea_2" 1662614151
   "C:/Users/CONTROL/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1662344511 89470 71d9926615af2e7496c290d29d290fc0 ""
   "C:/Users/CONTROL/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1656205869 10326951 4c20795a0ba3dfbd8250d5bdd3ba6426 ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
@@ -62,9 +62,9 @@
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1650429716 31067 89623bb5c412243bea4c601866f5e8c1 ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/tex/latex/nopageno/nopageno.sty" 923785200 947 32f9abe6276a11a5422e521974f546b6 ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/tex/latex/parskip/parskip.sty" 1615979760 4288 94714aa7f535440f33181fec52a31963 ""
-  "Tarea_2.tex" 1662613501 12864 a3fe3b875de4be05b85e3ccc6a02cf30 ""
-  "build/Tarea_2.aux" 1662613507 194 9335a9ca55a386f3840326f93434c5bf "pdflatex"
-  "c:/Users/CONTROL/Desktop/Algebra/Tarea 2/Tarea_2.tex" 1662613501 12864 a3fe3b875de4be05b85e3ccc6a02cf30 ""
+  "Tarea_2.tex" 1662614134 12864 a3fe3b875de4be05b85e3ccc6a02cf30 ""
+  "build/Tarea_2.aux" 1662614150 194 9335a9ca55a386f3840326f93434c5bf "pdflatex"
+  "c:/Users/CONTROL/Desktop/Algebra/Tarea 2/Tarea_2.tex" 1662614134 12864 a3fe3b875de4be05b85e3ccc6a02cf30 ""
   (generated)
   "build/Tarea_2.aux"
   "build/Tarea_2.log"
