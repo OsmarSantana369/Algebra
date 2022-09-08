@@ -242,8 +242,8 @@
             Como $ \overline{0} \in W_2 $, la suma y el producto por escalar son cerrados en $ W_2 $, entonces $ W_2 \leq V $, por la Proposición 5. \par
 
             \item[b)] $ V = W_1 + W_2 $ \par
-            
             \begin{enumerate}
+                %Contenido
                 \item[$ \subseteq $]] Sea $ (a,b,c) \in \mathbb{R}^3 $. P.d. $ (a,b,c) \in W_1 + W_2 $. \par
                 
                 Sean $ u = \left( \displaystyle \frac{3a + b - 4c}{6}, \frac{3a + 5b + 4c}{6}, \frac{-3a + b + 8c}{12} \right) $ y \\ $ \displaystyle v = \left(\frac{3a - b + 4c}{6}, \frac{-3a + b - 4c}{6}, \frac{3a - b + 4c}{12} \right) $. Como
@@ -258,12 +258,52 @@
                 \end{align*}
                 De esta manera, $ v \in W_2 $. Luego, $ u + v \in W_1 + W_2 $, pero
                 \begin{align*}
-                    u + v =& \left( \displaystyle \frac{3a + b - 4c}{6}, \frac{3a + 5b + 4c}{6}, \frac{-3a + b + 8c}{12} \right) + \\ \left(\frac{3a - b + 4c}{6}, \frac{-3a + b - 4c}{6}, \frac{3a - b + 4c}{12} \right)
+                    u + v =& \left( \displaystyle \frac{3a + b - 4c}{6}, \frac{3a + 5b + 4c}{6}, \frac{-3a + b + 8c}{12} \right) + \\ \left(\frac{3a - b + 4c}{6}, \frac{-3a + b - 4c}{6}, \frac{3a - b + 4c}{12} \right) \\
+                    =& \left( \displaystyle \frac{3a + b - 4c}{6} + \frac{3a - b + 4c}{6}, \frac{3a + 5b + 4c}{6} + \frac{-3a + b - 4c}{6}, \frac{-3a + b + 8c}{12} + \frac{3a - b + 4c}{12} \right) \\
+                    =& \left( \displaystyle \frac{6a}{6}, \frac{6b}{6}, \frac{12c}{12} \right)
+                    =& (a,b,c)
                 \end{align*}
+                Así, $ (a,b,c) \in W_1 + W_2 $. \par
+                $ \therefore V \subseteq W_1 + W_2 $.
+
+                %Contiene
+                \item[$ \supseteq $]] Como $ W_1, W_2 \leq V $ entonces, por el Teorema 12, $ W_1 + W_2 \leq V $ y por definición de subespacio vectorial $ W_1 + W_2 \subseteq V $.
+            \end{enumerate}
+            $ \therefore V = W_1 + W_2 $ \par
+            
+            \item[c)] $ W_1 \cap W_2 = \left \{\overline{0} \right \} $
+            \begin{enumerate}
+                \item[$ \subseteq $]] Sea $ (a,b,c) \in W_1 \cap W_2 $. P.d. $ (a,b,c) \in \left \{\overline{0} \right \} $.
+
+                Como $ (a,b,c) \in W_1 \cap W_2 $ entonces $ (a,b,c) \in W_1 $ y $ (a,b,c) \in W_2 $. Ya que $ (a,b,c) \in W_1 $ entonces 
+                \begin{equation}
+                    3a - b + 4c = 0
+                    \label{eq:uno}
+                \end{equation}
+                Asimismo, como $ (a,b,c) \in W_2 $ entonces 
+                \begin{equation}
+                    b = -a 
+                    \label{eq:dos} \\
+                    2c = a \\
+                    \Longrightarrow c = \frac{a}{2}
+                    \label{eq:tres}
+                \end{equation}
+                Sustituyendo (\ref{eq:dos}) y (\ref{eq:tres}) en (\ref{eq:uno}) se tiene que
+                \begin{equation*}
+                    3a - (-a) + 4(\frac{a}{2}) = 0 \\
+                    \Longrightarrow 3a + a + 2a = 0 \\
+                    \Longrightarrow 6a = 0 \\
+                    \Longrightarrow a = 0
+                \end{equation*}
+                Así, por (\ref{eq:dos}), se tiene que b = -a = -0 = 0. Y por (\ref{eq:tres}) c = \frac{a}{2} = \frac{0}{2} = 0. De esta manera, (a,b,c) = (0,0,0) = \overline{0}. \par
+                \therefore $ (a,b,c) \in \left \{\overline{0} \right \} $.
+
+                \item[$ \supseteq $]]
+
+                
 
             \end{enumerate}
-            
-            
+
         \end{enumerate}
         
         
