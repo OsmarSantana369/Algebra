@@ -204,7 +204,6 @@ INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex\latex\nopageno\nopageno
 INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex\latex\nopageno\nopageno.sty
 INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex\latex\nopageno\nopageno.sty
 INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex\latex\nopageno\nopageno.sty
-INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
 INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
 INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
 INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
@@ -287,6 +286,7 @@ INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\s
 INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbxsl10.tfm
 INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
+INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT c:\Users\CONTROL\Desktop\Algebra\Tarea 2\build\Tarea_2.aux
 INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
@@ -296,6 +296,8 @@ INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts
 INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx7.pfb
 INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbxsl10.pfb
 INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbxsl10.pfb
+INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
+INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
 INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\CONTROL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb

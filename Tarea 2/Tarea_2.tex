@@ -1,8 +1,8 @@
 \documentclass[fleqn]{article}
 \usepackage{amsmath, amssymb}
 \usepackage[spanish]{babel}
-\usepackage{parskip, nopageno, parskip}
-\usepackage[a4paper, margin=3cm]{geometry}
+\usepackage{parskip, nopageno}
+\usepackage[a4paper, margin = 2.1cm]{geometry}
 \renewcommand{\theenumii}{\roman{enumii}}   %Redefinir los simbolos de lista con minúsculas romana, (es necesario cargar el idioma inglés)
 \renewcommand{\labelenumii}{{\theenumii}.}   %Poner un punto despúes del símbolo de lista
 
@@ -56,7 +56,7 @@
             \normalfont
             \textbf{Af:} La matriz identidad es una matriz triangular superior. \par
 
-            \hspace{2.7mm}\textbf{Dem.}\par
+            \hspace{2.7mm} \textbf{Dem.} \par
 
             Sea $ I_n = [a_{ij}] $ la matriz identidad. Por definición, 
             \begin{equation*}
@@ -148,7 +148,73 @@
         \end{enumerate}
 
         %Ejercicio 3
-        \item Demuestre el corolario 13.
+        \item Sea $ V $ un $ K $-espacio vectorial y $ W_1, W_2, \, \ldots \, , W_n \leq V $ entonces:
+        \begin{enumerate}
+            \item $	W_1 + W_2 + \cdots + W_n \leq V $. \par
+            \normalfont
+            \hspace{2.7mm} \textbf{Dem.} \par
+
+            Pd. $ \overline{0} \in W_1 + W_2 + \cdots + W_n $. \par
+
+            Como $ W_1, W_2,  \, \ldots \, , W_n \leq V $, entonces $ \overline{0} \in W_1, W_2, \, \ldots \, , W_n $ para cada $ i=1, \, \ldots \, ,n $. Así,
+            \begin{equation*}
+                \underbrace{\overline{0} + \overline{0} + \cdots + \overline{0}} \in W_1 + W_2 + \cdots + W_n
+            \end{equation*}
+            \vspace{0.5mm} n veces
+            Es decir,
+            \begin{equation*}
+                \overline{0} \in W_1 + W_2 + \cdots + W_n
+            \end{equation*}
+            Pd. Cerradura de la suma. \par
+
+            Sean $ v, w \in W_1 + W_2 + \cdots + W_n $, entonces existen $ v_1, w_1 \in W_1 $, $ v_2, w_2 \in W_2 $, $ \, \ldots \, $, $ v_n, w_n \in W_n $ tales que
+            \begin{equation*}
+                v = v_1 + v_2 + \cdots + v_n \quad \quad \quad y \quad \quad \quad
+                w = w_1 + w_2 + \cdots + w_n
+            \end{equation*}
+            Entonces
+            \begin{equation*}
+                v + w = \left( v_1 + v_2 + \cdots + v_n \right) + \left( w_1 + w_2 + \cdots + w_n \right)
+            \end{equation*}
+            Y conmutando y asociando se tiene que 
+            \begin{equation*}
+                v + w = \left( v_1 + w_1 \right) + \left( v_2 + w_2 \right) + \cdots + \left( v_n + w_n \right)
+            \end{equation*}
+            De donde $ \left( v_1 + w_1 \right) \in W_1 $, $ \left( v_2 + w_2 \right) \in W_2 $, $ \, \ldots \, $, $ \left( v_n + w_n \right) \in W_n $ pues $ W_1, W_2, \, \ldots \, , W_n \leq V $. Así pues
+            \begin{equation*}
+                v + w \in W_1 + W_2 + \cdots + W_n
+            \end{equation*}
+            Pd. Cerradura del producto por escalar. \par
+            Sean $ v \in W_1 + W_2 + \cdots + W_n $ y $ \delta \in K $, entonces existen $ v_1 \in W_1 $, $ v_2 \in W_2 $, $ \, \ldots \, $, $ v_n \in W_n $ tales que
+            \begin{equation*}
+                v = v_1 + v_2 + \cdots + v_n
+            \end{equation*}
+            Entonces
+            \begin{align*}
+                \delta v =& \, \delta \left( v_1 + v_2 + \cdots + v_n \right) \\
+                =& \, \delta v_1 + \delta v_2 + \cdots + \delta v_n 
+            \end{align*}
+            De donde $ \delta v_1 \in W_1 $, $ \delta v_2 \in W_2 $, $ \, \ldots \, $, $ \delta v_n \in W_n $ pues $ W_1, W_2, \, \ldots \, , W_n \leq V $. Así,
+            \begin{align*}
+                & \delta v_1 + \delta v_2 + \cdots + \delta v_n \in W_1 + W_2 + \cdots + W_n \\
+                & \text{Es decir,} \\
+                & \delta v \in W_1 + W_2 + \cdots + W_n
+            \end{align*}
+            $ \therefore W_1 + W_2 + \cdots + W_n \leq V $.
+
+            \item $ W_i \subseteq W_1 + W_2 + \cdots + W_n; \, \forall \, i = 1,  \, \ldots \, , n $. \par
+            \hspace{2.7mm} \textbf{Dem.} \par
+
+            Sea $ u_i \in W_i $. Como $ \overline{0} \in W_1, W_2, \ldots, W_n $, pues $ W_1, W_2, \ldots, W_n \leq V $, entonces
+            \begin{equation*}
+                \overline{0} + \overline{0} + \ldots + u_i + \ldots + \overline{0} \in W_1 + W_2 + \cdots + W_i + \cdots + W_n
+            \end{equation*}
+            Es decir,
+            \begin{equation*}
+                u_i \in W_1 + W_2 + \cdots + W_i + \cdots + W_n
+            \end{equation*}
+            $ \therefore W_i \subseteq W_1 + W_2 + \cdots + W_n $. $ \blacksquare $
+        \end{enumerate}
         
         %Ejercicio 4
         \item Sea $ V $ un $ K $ \textsl{- espacio vectorial} y $ W \subseteq V $ no vacío. Demuestre que $ W \leq V $, si y solo si se cumple:
@@ -246,22 +312,23 @@
                 %Contenido
                 \item[$ \subseteq $]] Sea $ (a,b,c) \in \mathbb{R}^3 $. P.d. $ (a,b,c) \in W_1 + W_2 $. \par
                 
-                Sean $ u = \left( \displaystyle \frac{3a + b - 4c}{6}, \frac{3a + 5b + 4c}{6}, \frac{-3a + b + 8c}{12} \right) $ y \\ $ \displaystyle v = \left(\frac{3a - b + 4c}{6}, \frac{-3a + b - 4c}{6}, \frac{3a - b + 4c}{12} \right) $. Como
+                Sean $ u = \left( \displaystyle \frac{3a + b - 4c}{6}, \frac{3a + 5b + 4c}{6}, \frac{-3a + b + 8c}{12} \right) $ y $ \displaystyle v = \left(\frac{3a - b + 4c}{6}, \frac{-3a + b - 4c}{6}, \frac{3a - b + 4c}{12} \right) $. Como
                 \begin{align*}
                     3 \left(\frac{3a + b - 4c}{6} \right) - \frac{3a + 5b + 4c}{6} + 4 \left(\frac{-3a + b + 8c}{12} \right) = \; & \frac{9a + 3b - 12c}{6} \; + \\ & \frac{-3a - 5b - 4c}{6} \; + \\ & \frac{-6a + 2b + 16c}{6} \\
                     = \; & 0
                 \end{align*}
                 entonces $ u \in W_1 $. Y también se tiene que
                 \begin{align*}
-                \frac{-3a + b - 4c}{6} = - \frac{3a - b + 4c}{6} \quad y \\\\
-                2 \left( \frac{3a - b + 4c}{12} \right) = \frac{3a - b + 4c}{6} \\
+                    \frac{-3a + b - 4c}{6} = - \frac{3a - b + 4c}{6} \quad y \\
+                    2 \left( \frac{3a - b + 4c}{12} \right) = \frac{3a - b + 4c}{6}
                 \end{align*}
                 De esta manera, $ v \in W_2 $. Luego, $ u + v \in W_1 + W_2 $, pero
-                \begin{align*}
-                    u + v =& \left( \displaystyle \frac{3a + b - 4c}{6}, \frac{3a + 5b + 4c}{6}, \frac{-3a + b + 8c}{12} \right) + \\ \left(\frac{3a - b + 4c}{6}, \frac{-3a + b - 4c}{6}, \frac{3a - b + 4c}{12} \right) \\
-                    =& \left( \displaystyle \frac{3a + b - 4c}{6} + \frac{3a - b + 4c}{6}, \frac{3a + 5b + 4c}{6} + \frac{-3a + b - 4c}{6}, \frac{-3a + b + 8c}{12} + \frac{3a - b + 4c}{12} \right) \\
-                    =& \left( \displaystyle \frac{6a}{6}, \frac{6b}{6}, \frac{12c}{12} \right)
-                    =& (a,b,c)
+                \raggedright \begin{align*}
+                    u + v = \; & \left( \displaystyle \frac{3a + b - 4c}{6}, \frac{3a + 5b + 4c}{6}, \frac{-3a + b + 8c}{12} \right) + \\
+                    & \left( \frac{3a - b + 4c}{6}, \frac{-3a + b - 4c}{6}, \frac{3a - b + 4c}{12} \right) \\
+                    = \; & \left( \displaystyle \frac{3a + b - 4c}{6} + \frac{3a - b + 4c}{6} \, , \; \frac{3a + 5b + 4c}{6} + \frac{-3a + b - 4c}{6} \, , \; \frac{-3a + b + 8c}{12} + \frac{3a - b + 4c}{12} \right) \\
+                    = \; & \left( \displaystyle \frac{6a}{6} \, , \; \frac{6b}{6} \, , \; \frac{12c}{12} \right) \\
+                    = \; & \left(a,b,c \right)
                 \end{align*}
                 Así, $ (a,b,c) \in W_1 + W_2 $. \par
                 $ \therefore V \subseteq W_1 + W_2 $.
@@ -278,36 +345,35 @@
                 Como $ (a,b,c) \in W_1 \cap W_2 $ entonces $ (a,b,c) \in W_1 $ y $ (a,b,c) \in W_2 $. Ya que $ (a,b,c) \in W_1 $ entonces 
                 \begin{equation}
                     3a - b + 4c = 0
-                    \label{eq:uno}
+                    \label{eq:incisou}
                 \end{equation}
                 Asimismo, como $ (a,b,c) \in W_2 $ entonces 
                 \begin{equation}
                     b = -a 
-                    \label{eq:dos} \\
-                    2c = a \\
+                    \label{eq:incisod}
+                \end{equation} 
+                y \par
+                $ \quad \quad \, 2c = a $
+                \begin{align}
                     \Longrightarrow c = \frac{a}{2}
-                    \label{eq:tres}
-                \end{equation}
-                Sustituyendo (\ref{eq:dos}) y (\ref{eq:tres}) en (\ref{eq:uno}) se tiene que
-                \begin{equation*}
-                    3a - (-a) + 4(\frac{a}{2}) = 0 \\
-                    \Longrightarrow 3a + a + 2a = 0 \\
-                    \Longrightarrow 6a = 0 \\
-                    \Longrightarrow a = 0
-                \end{equation*}
-                Así, por (\ref{eq:dos}), se tiene que b = -a = -0 = 0. Y por (\ref{eq:tres}) c = \frac{a}{2} = \frac{0}{2} = 0. De esta manera, (a,b,c) = (0,0,0) = \overline{0}. \par
-                \therefore $ (a,b,c) \in \left \{\overline{0} \right \} $.
+                    \label{eq:incisot}
+                \end{align}
+                Sustituyendo (\ref{eq:incisod}) y (\ref{eq:incisot}) en (\ref{eq:incisou}) se tiene que
+                \begin{align*}
+                    & 3a - (-a) + 4 \left( \frac{a}{2} \right) = 0 \\
+                    & \Longrightarrow 3a + a + 2a = 0 \\
+                    & \Longrightarrow 6a = 0 \\
+                    & \Longrightarrow a = 0
+                \end{align*}
+                Así, por (\ref{eq:incisod}), se tiene que $ b = -a = -0 = 0 $. Y por (\ref{eq:incisot}) $ c = \displaystyle \frac{a}{2} = \frac{0}{2} = 0 $. De esta manera, $ (a,b,c) = (0,0,0) = \overline{0} $. \par
+                $ \therefore (a,b,c) \in \left \{\overline{0} \right \} $.
 
                 \item[$ \supseteq $]] Como $ W_1, W_2 \leq V $ entonces $ \overline{0} $ pertenece a $ W_1 $ y a $ W_2 $. Así, $ \overline{0} \in W_1 \cap W_2 $. \par 
 
-                $ \therefore \left \{\ooverline{0}\right \}
-
+                $ \therefore \left\{\overline{0} \right\} \subseteq W_1 \cap W_2 $
             \end{enumerate}
-
+            $ \therefore W_1 \cap W_2 = \left \{\overline{0} \right \} $
         \end{enumerate}
-        
-        
-        
+        $ \therefore V = W_1 \, \oplus \, W_2 $. $ \blacksquare $
     \end{enumerate}
-
 \end{document}

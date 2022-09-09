@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1662614147 "c:/Users/CONTROL/Desktop/Algebra/Tarea 2/Tarea_2.tex" "build/Tarea_2.pdf" "Tarea_2" 1662614151
-  "C:/Users/CONTROL/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1662344511 89470 71d9926615af2e7496c290d29d290fc0 ""
+["pdflatex"] 1662707700 "c:/Users/CONTROL/Desktop/Algebra/Tarea 2/Tarea_2.tex" "build/Tarea_2.pdf" "Tarea_2" 1662707704
+  "C:/Users/CONTROL/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1662698138 89470 71d9926615af2e7496c290d29d290fc0 ""
   "C:/Users/CONTROL/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1656205869 10326951 4c20795a0ba3dfbd8250d5bdd3ba6426 ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233955454 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -14,6 +14,7 @@
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx5.tfm" 1136768653 1332 f817c21a1ba54560425663374f1b651a ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx7.tfm" 1136768653 1336 3125ccb448c1a09074e3aa4a9832f130 ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbxsl10.tfm" 1136768653 1532 d8160fb2d5f634e769c9f972be05f829 ""
+  "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmcsc10.tfm" 1136768653 1300 63a6111ee6274895728663cf4b4e7e81 ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsl12.tfm" 1136768653 1504 f280e6069e577ca4a981806c471fe65c ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
@@ -21,6 +22,7 @@
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb" 1247596667 32007 e8fa0078355f39467039935974716569 ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb" 1247596666 33268 c6f8eb7f8646b55ddad94764eab1ec72 ""
+  "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1247596667 32001 6aeea3afe875097b1eb0da29acd61e28 ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247596667 36281 c355509802a035cadc5f15869451dcee ""
@@ -62,9 +64,9 @@
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1650429716 31067 89623bb5c412243bea4c601866f5e8c1 ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/tex/latex/nopageno/nopageno.sty" 923785200 947 32f9abe6276a11a5422e521974f546b6 ""
   "C:/Users/CONTROL/AppData/Local/Programs/MiKTeX/tex/latex/parskip/parskip.sty" 1615979760 4288 94714aa7f535440f33181fec52a31963 ""
-  "Tarea_2.tex" 1662614134 12864 a3fe3b875de4be05b85e3ccc6a02cf30 ""
-  "build/Tarea_2.aux" 1662614150 194 9335a9ca55a386f3840326f93434c5bf "pdflatex"
-  "c:/Users/CONTROL/Desktop/Algebra/Tarea 2/Tarea_2.tex" 1662614134 12864 a3fe3b875de4be05b85e3ccc6a02cf30 ""
+  "Tarea_2.tex" 1662707697 19379 46db4ef1442bc86a0fa3e92475ec8407 ""
+  "build/Tarea_2.aux" 1662707704 284 8479ae6eabbed7c929d28d187687dca5 "pdflatex"
+  "c:/Users/CONTROL/Desktop/Algebra/Tarea 2/Tarea_2.tex" 1662707697 19379 46db4ef1442bc86a0fa3e92475ec8407 ""
   (generated)
   "build/Tarea_2.aux"
   "build/Tarea_2.log"
