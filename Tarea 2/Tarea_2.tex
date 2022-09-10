@@ -1,15 +1,16 @@
 \documentclass[fleqn]{article}
 \usepackage{amsmath, amssymb}
-\usepackage[spanish]{babel}
+\usepackage[spanish, english]{babel}
 \usepackage{parskip, nopageno}
 \usepackage[a4paper, margin = 2.1cm]{geometry}
-\renewcommand{\theenumii}{\roman{enumii}}   %Redefinir los simbolos de lista con minúsculas romana, (es necesario cargar el idioma inglés)
+\renewcommand{\theenumii}{\textit{\roman{enumii}}}   %Redefinir los simbolos de lista con minúsculas romana, (es necesario cargar el idioma inglés)
 \renewcommand{\labelenumii}{{\theenumii}.}   %Poner un punto despúes del símbolo de lista
 
 \begin{document}
     %Portada
     \begin{titlepage}
         \centering
+        \vspace{2.7cm}
         {\Huge \textbf{Universidad Autónoma del Estado de México}\par}
         \vspace{0.9cm}
 
@@ -32,20 +33,18 @@
 
         {\huge \textbf{Alumnos:}\par}
         \vspace{0.3cm}
-        {\huge \textsl{Peña Mateos Jesús Jacob}}\par
-        \vspace{1.5mm}
-        {\huge \textsl{Santana Reyes Osmar Dominique}}\par
         {\huge \textsl{Gallegos Torres Gonzalo}}\par
+        {\huge \textsl{Peña Mateos Jesús Jacob}}\par
+        {\huge \textsl{Santana Reyes Osmar Dominique}}\par
         \vspace{1.8cm}
 
         {\huge \textbf{Semestre: 2022B}\par}
         \vspace{0.7cm}
         \vfill
-        \raggedleft{\LARGE Fecha de Entrega:}\par
+        \raggedleft{\LARGE Fecha de Entrega: 9 de septiembre de 2022}\par
     \end{titlepage}
 
     \begin{enumerate}
-        \bfseries
         %Ejercicio 1
         \item Diga si las siguientes proposiciones son falsas o verdaderas y justifique su respuesta.
     
@@ -53,10 +52,9 @@
             %Inciso i
             \item La matriz identidad es una matriz triangular superior. \par
             
-            \normalfont
-            \textbf{Af:} La matriz identidad es una matriz triangular superior. \par
+            Af: La matriz identidad es una matriz triangular superior. \par
 
-            \hspace{2.7mm} \textbf{Dem.} \par
+            \hspace{2.7mm} Dem. \par
 
             Sea $ I_n = [a_{ij}] $ la matriz identidad. Por definición, 
             \begin{equation*}
@@ -71,13 +69,11 @@
             Ya que $ a_{ij} = 0 \;\, \forall \, i > j $, entonces $ I_n $ es una matriz triangular superior, por definición. $ \blacksquare $ \par
 
             %Inciso ii
-            \bfseries
             \item Si $ V $ es un $ K $ \textsl{- espacio vectorial}, $ W \leq V $ y $ U \leq W $ entonces $ U \leq V $. \par
             
-            \normalfont
-            \textbf{Af:} $ U \leq V $. \par
+            Af: $ U \leq V $. \par
 
-            \hspace{2.7mm}\textbf{Dem.} \par
+            \hspace{2.7mm} Dem. \par
 
             Como $ W \leq V $ y $ U \leq W $ entonces $ W \subseteq V $ y $ U \subseteq W $. De esta menera, como $ U \subseteq W $ y $ W \subseteq V $, entonces $ U \subseteq V $. \par
 
@@ -90,13 +86,11 @@
             En conclusión, como $ \overline{0} \in U $, la adición es cerrada en $ U $ y el producto por escalar es cerrado en $ U $, entonces $ U \leq V $, por la proposición 5. $ \blacksquare $ \par
 
             %Inciso iii
-            \bfseries
             \item Si $ A $ es una matriz con $ tr(A) = 0 $, entonces $ A $ es matriz antisimétrica. \par
             
-            \normalfont
-            \textbf{Af:} $ A $ no es matriz antisimétrica. \par
+            Af: $ A $ no es matriz antisimétrica. \par
 
-            \hspace{2.7mm}\textbf{Dem.} \par
+            \hspace{2.7mm} Dem. \par
 
             Considerando la matriz
             \begin{equation*}
@@ -138,29 +132,81 @@
         
         \begin{enumerate}
             %Inciso i
-            \item Demuestra que $ A + A^t $ es una matriz simétrica.
-            
+            \item Demuestra que $ A + A^t $ es una matriz simétrica. \par
+            \hspace{2.7mm}  Dem. \par
+
+            P.d. $ (A + A^t)^t = A + A^t $.
+            \begin{align*}
+                (A + A^t)^t =& \, A^t + (A^t)^t & (\text{Proposición 7}) \\
+                =& \, A^t + A & (\text{por una observación}) \\
+                =& \, A + A^t & (\text{conmutatividad en } M_n[k])
+            \end{align*}
+            $ \therefore A + A^t $ es simétrica. $ \blacksquare $
+
             %Inciso ii
-            \item Sea $ U = \left \{A \in M_n [K] \; \middle \arrowvert \; A \text{ es antisimétrica} \right \} \subseteq M_n [K] $. Demuestre que $ U \leq M_n[K] $.
+            \item Sea $ U = \left \{A \in M_n [K] \; \middle \arrowvert \; A \text{ es antisimétrica} \right \} \subseteq M_n [K] $. Demuestre que $ U \leq M_n[K] $. \par
+            
+            \hspace{2.7mm}  Dem. \par
+
+            \begin{minipage}[c]{5cm}
+                \vspace{-1.7cm} Considerando el teorema 6. P.d. 
+            \end{minipage} \begin{minipage}[b]{6cm}
+                \begin{enumerate}
+                    \item[a)] $ V \neq \emptyset $
+                    \item[b)] $ \forall A, B \in U, A + B \in U $
+                    \item[c)] $ \forall A \in U $ y $ \forall \lambda \in K, \lambda A \in U $
+                \end{enumerate}
+            \end{minipage}
+
+            \begin{enumerate}
+                \item[a)] Sea $ \overline{0} \in M_n [K] $ con $ \overline{0} = [a_{ij}]_n $ donde $ a_{ij} = 0 $, $ \forall i, j \in \{1, \ldots, n\} $. Notemos que $ a_{ji} = 0 $, $ \forall j, i \in \{1, \ldots, n\} $. Así, $ a_{ij} = 0 = -0 = -a_{ji} $. \par 
+                
+                Así, $ \overline{0} $ es una matriz simétrica, es decir, $ \overline{0} \in U $. \par
+
+                $ \therefore U \neq \emptyset $
+
+                \item[b)] Sean $ A, B \in U $ entonces $ A^t = -A $ y $ B^t = -B $. Luego, \par
+                \begin{align*}
+                    (A + B)^t =& \, A^t + B^t & (\text{Proposición 7}) \\
+                    =& -A + (-B) & (\text{por hipótesis}) \\
+                    =& -(A + B) & (\text{Proposición 4})
+                \end{align*}
+                $ \therefore A + B $ es antisimétrica y así $ A + B \in U $
+
+                \item[c)] Sea $ A \in U $ entonces $ A^t = -A $. Así, sea $ \lambda \in K $, entonces
+                \begin{align*}
+                    (\lambda A)^t =& \lambda A^t & (\text{Proposición 7}) \\
+                    =& \lambda (-A) & (\text{pues } A^t = -A) \\
+                    =& \lambda ((-1)A) \\
+                    =& (\lambda (-1)) A \\
+                    =& ((-1) \lambda) A \\
+                    =& (-1) ( \lambda A) \\
+                    =& - ( \lambda A) \\
+                \end{align*}
+                $ \therefore \lambda A $ es antisimétrica y así $ \lambda A \in U $.
+            \end{enumerate}
+            $ \therefore U \leq M_n[K] $. $ \blacksquare $
             
             %Inciso iii
-            \item ¿Cuántas entradas diferentes puede tener una matriz simétrica de orden $ n $? Argumente su respuesta.
+            \item ¿Cuántas entradas diferentes puede tener una matriz simétrica de orden $ n $? Argumente su respuesta. \par
+            
+            \hspace{2.7mm}  Sol. \par
+
+            Sea $ A \in M_n[K] $ simétrica, por definición $ A = A^t $, es decir, $ a_{ij} = a_{ji} $, $ \forall i, j \in \{1, \ldots, n\} $. Notemos que $ a_{ii} = a_{ii} $, así que, al transponer la raíz, la diagonal principal permanece sin cambios. Las entradas $ a_{ij} $ pueden ser todas distintas $ \forall i > j $ siempre y cuando $ a_{ij} = a_{ji} $, es decir, $ n^2 - \displaystyle \sum_{i=1}^{n} \left(\sum_{j=1}^{i} a_{ij} \right) $ entradas pueden ser distintas.
         \end{enumerate}
 
         %Ejercicio 3
         \item Sea $ V $ un $ K $-espacio vectorial y $ W_1, W_2, \, \ldots \, , W_n \leq V $ entonces:
         \begin{enumerate}
             \item $	W_1 + W_2 + \cdots + W_n \leq V $. \par
-            \normalfont
-            \hspace{2.7mm} \textbf{Dem.} \par
+            \hspace{2.7mm}  Dem. \par
 
             Pd. $ \overline{0} \in W_1 + W_2 + \cdots + W_n $. \par
 
             Como $ W_1, W_2,  \, \ldots \, , W_n \leq V $, entonces $ \overline{0} \in W_1, W_2, \, \ldots \, , W_n $ para cada $ i=1, \, \ldots \, ,n $. Así,
             \begin{equation*}
-                \underbrace{\overline{0} + \overline{0} + \cdots + \overline{0}} \in W_1 + W_2 + \cdots + W_n
+                \overline{0} + \overline{0} + \cdots + \overline{0} \in W_1 + W_2 + \cdots + W_n \\\\
             \end{equation*}
-            \vspace{0.5mm} n veces
             Es decir,
             \begin{equation*}
                 \overline{0} \in W_1 + W_2 + \cdots + W_n
@@ -200,10 +246,10 @@
                 & \text{Es decir,} \\
                 & \delta v \in W_1 + W_2 + \cdots + W_n
             \end{align*}
-            $ \therefore W_1 + W_2 + \cdots + W_n \leq V $.
+            $ \therefore W_1 + W_2 + \cdots + W_n \leq V $. $\blacksquare$
 
             \item $ W_i \subseteq W_1 + W_2 + \cdots + W_n; \, \forall \, i = 1,  \, \ldots \, , n $. \par
-            \hspace{2.7mm} \textbf{Dem.} \par
+            \hspace{2.7mm}  Dem. \par
 
             Sea $ u_i \in W_i $. Como $ \overline{0} \in W_1, W_2, \ldots, W_n $, pues $ W_1, W_2, \ldots, W_n \leq V $, entonces
             \begin{equation*}
@@ -226,14 +272,28 @@
             %Inciso ii
             \item $ \lambda u \in W $, $ \forall \, \lambda \in K $ y $ \forall \, u \in W $.
         \end{enumerate}
+        \hspace{2.7mm}  Dem. \par
+        \begin{enumerate}
+            \item[$ \Longrightarrow $]] Como $ W \leq V $ entonces $ W $ es cerrado bajo el producto por escalar. Así, si $ z\in W $ entonces $ (-1)z = -z \in W $. Luego, $ W $ es cerrado bajo la suma. De esta forma, sea $ u \in W $ entonces $ u + (-z) = u - z \in W $. \par
+            \item[$ \Longleftarrow $]] Por el teorema 6, es suficiente demostrar
+            \begin{enumerate}
+                \item[a)] $ W \neq \emptyset $ \par
+                Esto se da por hipótesis.
+
+                \item[b)] $ W $ es cerrado bajo la suma. \par
+                Como pasa ii y sean $ z \in W $, $ -1 \in K $ entonces $ (-1)z = -z \in W $. Así, $ u - (-z) = u + z \in W $.
+
+                \item[c)] W es cerrado bajo el producto por escalar. \par
+                Se da por hipótesis. $ \blacksquare $
+            \end{enumerate}
+        \end{enumerate}
 
         %Ejercicio 5
         \item Sean $ V = \mathbb{R}^3 $, un $ \mathbb{R} $ \textsl{- espacio vectorial}, con las operaciones usuales de suma y producto por escalar, $ W_1 $ y $ W_2 $ subconjuntos de $ V $, definidos como, $ W_1 = \left \{(a,b,c) \in \mathbb{R}^3 \middle \arrowvert 3a - b + 4c = 0 \right \} $ y $ W_2 = \left \{(a,b,c) \in \mathbb{R}^3 \middle \arrowvert b=-a, 2c=a \right \} $ ¿Es $ V = W_1 \, \oplus \, W_2 $? Demuéstrelo o dé un contraejemplo de la propiedad que no se cumpla.
         
-        \normalfont
-        \textbf{Af:} $ V = W_1 \, \oplus \, W_2 $. \par
+        Af: $ V = W_1 \, \oplus \, W_2 $. \par
 
-        \hspace{2.7mm}\textbf{Dem.} \par
+        \hspace{2.7mm} Dem. \par
 
         \begin{minipage}[c]{0.7cm}
             \vspace{-1.7cm} P.d. 
