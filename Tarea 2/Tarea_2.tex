@@ -1,10 +1,10 @@
-\documentclass[fleqn]{article}
+\documentclass[fleqn]{article}                       %Con fleqn las ecuaciones se alinean a la izquierda
 \usepackage{amsmath, amssymb}
 \usepackage[spanish, english]{babel}
-\usepackage{parskip, nopageno}
-\usepackage[a4paper, margin = 2.1cm]{geometry}
+\usepackage{parskip, nopageno}                       %Con nopageno no se enumeran las páginas
+\usepackage[a4paper, margin = 2.1cm]{geometry}       %Tamaño de hoja y margenes de cada una
 \renewcommand{\theenumii}{\textit{\roman{enumii}}}   %Redefinir los simbolos de lista con minúsculas romana, (es necesario cargar el idioma inglés)
-\renewcommand{\labelenumii}{{\theenumii}.}   %Poner un punto despúes del símbolo de lista
+\renewcommand{\labelenumii}{{\theenumii}.}           %Poner un punto despúes del símbolo de lista
 
 \begin{document}
     %Portada
@@ -41,7 +41,7 @@
         {\huge \textbf{Semestre: 2022B}\par}
         \vspace{0.7cm}
         \vfill
-        \raggedleft{\LARGE Fecha de Entrega: 9 de septiembre de 2022}\par
+        \raggedleft{\LARGE Fecha de Entrega: 9 de septiembre de 2022}\par         %Alinear a la derecha
     \end{titlepage}
 
     \begin{enumerate}
@@ -147,7 +147,9 @@
             \item Sea $ U = \left \{A \in M_n [K] \; \middle \arrowvert \; A \text{ es antisimétrica} \right \} \subseteq M_n [K] $. Demuestre que $ U \leq M_n[K] $. \par
             
             \hspace{2.7mm}  Dem. \par
-
+            %minipage sirve para dividir en columnas
+            %[c,t] indica la posición del texto
+            %{*distancia*} indica el ancho de la columna
             \begin{minipage}[c]{5cm}
                 \vspace{-1.7cm} Considerando el teorema 6. P.d. 
             \end{minipage} \begin{minipage}[b]{6cm}
