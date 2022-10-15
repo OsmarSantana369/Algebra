@@ -1,0 +1,85 @@
+\documentclass[fleqn]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{parskip}
+
+\begin{document}
+    \begin{enumerate}
+    %Ejercicio 2
+        \item[2.] Determine si los siguientes conjuntos son linealmente dependientes o linealmente independientes, sin formar ni resolver un sistema de ecuaciones. Justifique su respuesta.
+    
+        \begin{enumerate}
+        %Inciso 1 del ejercicio 2
+            \item[i.] $ A = \{\} $
+        
+            Af. $ A $ es linealmente independiente.
+
+            Dem.
+
+            Por definición, un conjunto es linealmente dependiente si existe un número finito de vectores distintos $ v_1, \ldots v_n $ y escalares $ a_1, \ldots a_n $, no todos cero, tal que $ \overline{0} = a_1 v_1 + \cdots + a_n v_n $. Pero el conjunto $ A $ es vacío, por lo que no cumple la definición y de esta forma no es linealmente dependiente. Por lo tanto, $ A $ es linealmente independiente, por definición. $ \blacksquare $ 
+
+        %Inciso 2 del ejercicio 2
+            \item[ii.] En el $ \mathbb{R} $ - espacio vectorial $ \mathbb{R}^2 $, el conjunto $ B = \left \lbrace (-2,6), (3,-9) \right \rbrace $.
+            
+            Af: $ B $ es linealmente dependiente.
+
+            Dem.
+
+            Ya que $ - \dfrac{3}{2} (-2,6) = (3,-9) $, con $ (-2,6), (3,-9) \in B $ y $ - \dfrac{3}{2} $ un escalar, se tiene que $ (3,-9) $ es combinación lineal de $ (-2,6) $. Así, por el Teorema 17, $ B $ es linealmente dependiente. $ \blacksquare $
+
+        %incido 3 del ejercicio 2
+            \item[iii.] En  el $ K $- espacio vectorial $ V $, consideremos el conjunto $ C = \left \lbrace \overline{0}_V, u \right \rbrace $, con $ u \in V $ y $ \overline{0}_V $, el idéntico aditivo en $ V $.
+            
+            Af. $ C $ es linealmente dependiente.
+
+            Dem.
+
+            Como $ \overline{0}_V $ es el idéntico aditivo en $ V $, por el Teorema 17, se sabe que $ \left\lbrace \overline{0}_V \right\rbrace $ es linealmente dependiente. Luego, como $ \left\lbrace \overline{0}_V \right\rbrace \subseteq \left \lbrace \overline{0}_V, u \right \rbrace $, se tiene que $ \left \lbrace \overline{0}_V, u \right \rbrace $ es linealmente dependiente, por el teorema 18. Por lo tanto, $ C $ es linealmente dependiente. $ \blacksquare $
+        \end{enumerate}
+    %Ejercicio 3
+        \item[3.] Sea V = $ \mathbb{R}_2 [x] $ el espacio vectorial de los polinomios hasta de grado 2, con coeficientes reales, y consideremos $ S = \left\lbrace f(x) = x^2 + x + 3, g(x) = 5x^2 - x + 2, h(x) = -3x^2 + 4 \right\rbrace \subseteq V $.  Determine si $ S $ es o no base para $ V $.
+        
+        Af: $ S $ es base para $ V $.
+        
+        Dem.
+
+        Sean $ a, b, c \in \mathbb{R} $ tales que $ \overline{0} = a \, f(x) + b \, g(x) + c \, h(x) $ se tiene que 
+        \begin{equation*}
+            \begin{split}
+                \overline{0} &= a(x^2 + x + 3) + b(5x^2 - x + 2) + c(-3x^2 + 4) \\
+                &= ax^2 + ax + 3a + 5bx^2 - bx + 2b - 3cx^2 + 4c \\
+                &= (a + 5b - 3c)x^2 + (a - b)x + (3a + 2b + 4c).
+            \end{split}
+        \end{equation*}
+        Así, 
+        \begin{equation}
+            0 = a + 5b - 3c
+            \label{eq:1}
+        \end{equation}
+        \begin{equation}
+            0 = a - b
+            \label{eq:2}
+        \end{equation}
+        \begin{equation}
+            0 = 3a + 2b + 4c
+            \label{eq:3}
+        \end{equation}
+        De (\ref{eq:2}) se tiene que $ a = b $. Sustituyendo esto en (\ref{eq:1}) y (\ref{eq:3}) se da que
+        \begin{equation}
+            0 = b + 5b - 3c = 6b - 3c
+            \label{eq:4}
+        \end{equation}
+        y
+        \begin{equation}
+            0 = 3b + 2b + 4c = 5b + 4c
+            \label{eq:5}
+        \end{equation}
+        Sumando $ 4 \cdot (\ref{eq:4}) $ y $ 3 \cdot (\ref{eq:5}) $ se obtiene que: $ 0 = 39b $ por lo que $ b = 0 $. Y como $ a = b $ se tiene que $ a = 0 $.
+
+        De (\ref{eq:4}), y como $ b = 0 $, se da que $ 0 = - 3c $. De esta forma, $ c = 0 $.
+
+        Ya que $ a = b = c = 0 $ entonces $ S $ es linealmente independiente.
+
+        Luego, por un ejercicio anterior, se sabe que $ \left\lbrace 1, x, x^2 \right\rbrace $ es una base, la cual tiene 3 elementos. Además, como $ S $ es linealmente independiente y tiene 3 elementos, se da que $ S $ es una base para $ V $, por el Corolario 25. $ \blacksquare $
+    
+    \end{enumerate}
+\end{document}
