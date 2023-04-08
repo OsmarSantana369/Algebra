@@ -1,0 +1,70 @@
+\documentclass[fleqn]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{parskip}
+
+\begin{document}
+    5. Sean $ V $ un espacio vectorial de dimensión finita, $ T $ un operador lineal en $ V $ y $ \beta $ una base para $ V $. Entonces $ \lambda $ es valor propio de $ T $ si y solo si $ \lambda $ es valor propio de $ [T]_{\beta} $.
+
+    Demostración.
+
+    Por el Teorema 2.1.13, $ \lambda $ es valor propio de $ T $ si y solo si $ \det(T - \lambda 1_V) = 0 $. Luego, por el inciso 4 del Teorema 2.1.12, $ \det([T]_{\beta} - \lambda I_n) = \det(T - \lambda 1_V) = 0 $ si y solo si $ \lambda $ es valor propio de $ [T]_{\beta} $, por el Corolario 2.1.14.
+
+    14. Demostrar que matrices semejantes tienen el mismo polinomio característico.
+
+    Demostración.
+
+    Sean $ A, B \in \mathcal{M}_n [\mathbb{K}] $ matrices semejantes, es decir, existe $ Q \in \mathcal{M}_n [\mathbb{K}] $ invertible tal que $ B = Q^{-1} A Q $, se tiene que
+    \begin{align*}
+        \text{polcar}(B) &= \det(B - t I_n) \\
+        &= \det(Q^{-1} A Q - t I_n) \\
+        &= \det[Q^{-1} A Q - Q^{-1} (t I_n) Q] \\
+        & \quad \, \bigl( \text{pues } Q^{-1} (t I_n) Q = t (Q^{-1} I_n Q) = t (Q^{-1} Q) = t I_n \bigr) \\
+        &= \det[Q^{-1} (A - t I_n) Q] \\
+        &= \det(Q^{-1}) \det(A - t I_n) \det(Q) \\
+        &= \dfrac{1}{\det(Q)} \det(A - t I_n) \det(Q) \\
+        &= \det(A - t I_n) \\
+        &= \text{polcar}(A)
+    \end{align*}
+    $ \therefore \text{polcar}(B) = \text{polcar}(A) $.
+
+    17. Sean $ T $ un operador lineal en un espacio vectorial $ V $, $ v $ un vector propio de $ T $ correspondiente al valor propio $ \lambda $ y $ m \in \mathbb{N} $. Demostrar que $ v $ es un vector propio de $ T^m $ correspondiente al valor propio $ \lambda^m $.
+
+    Demostración.
+
+    Aplicando inducción sobre m:
+
+    \begin{enumerate}
+        \item Base de inducción: Por hipótesis, $ v $ es vector propio de $ T $ correspondiente al valor propio $ \lambda $. Así, $ v $ es un vector propio de $ T^m $ correspondiente al valor propio $ \lambda^m $ para $ m = 1 $.
+        \item Hipótesis de inducción: Suponiendo que la afirmación se cumple para $ m = k $, es decir, $ v $ es un vector propio de $ T^k $ correspondiente al valor propio $ \lambda^k $.
+        \item Paso inductivo: P.d. La afirmación se cumple para $ m = k + 1 $.
+        
+        Por hipótesis de inducción se obtiene que 
+        \begin{align*}
+            T^{k + 1} (v) &= T(T^k (v)) \\
+            &= T(\lambda^k v) \\
+            &= \lambda^k T(v) \\
+            &= \lambda^k (\lambda v) & (\text{por la base de inducción}) \\
+            &= \lambda^{k+1} v 
+        \end{align*}
+    \end{enumerate}
+
+    $ \therefore v $ es un vector propio de $ T^m $ correspondiente al valor propio $ \lambda^m $ para todo $ m \in \mathbb{N} $.
+
+    41. Sea $ A $ una matriz real de $ n \times n $ (todas sus entradas son reales) con un valor propio complejo $ a + ib $ al que le corresponde un vector propio $ v + iw $ donde $ v $ y $ w $ son vectores reales. Demostrar que $ a - ib $ también es un valor propio con el vector propio $ v - iw $.
+
+    Demostración.
+
+    Sean $ A = [a_{jk}] $, $ v + iw = [b_{j}] $, $ v - iw = [c_{j}] $ y $ A(v + iw) = [d_{j}] $ con $ 1 \leq j,k \leq n $, pues $ v + iw, v - iw \in \mathbb{C}^n $ y así $ A(v + iw) \in \mathbb{C}^n $. Luego, como $ L_A (v - iw) = A(v - iw) \in \mathbb{C}^n $, para cada $ j \in \{ 1, 2, \dots , n \} $ se tiene que
+    \begin{align*}
+        [A(v - iw)]_j &= \sum_{l = 1}^{n} a_{jl} c_{l} \\
+        &= \sum_{l = 1}^{n} a_{jl} \overline{b_{l}} \\
+        &= \sum_{l = 1}^{n} \overline{a_{jl} b_{l}} \\
+        &= \overline{\sum_{l = 1}^{n} a_{jl} b_{l}} \\
+        &= \overline{d_{j}} \\
+        &= \overline{(a + ib)(b_j)} & \left( \text{pues } L_A (v - iw) = A(v + iw) = (a + ib)(v + iw) \text{ por hipótesis} \right) \\
+        &= \Bigl( \overline{a + ib} \Bigr) \Bigl( \overline{b_j} \Bigr) \\
+        &= (a - ib) c_j
+    \end{align*}
+    De esta manera, $ L_A (v - iw) = A(v - iw) = (a - ib)(v - iw) $ y, por lo tanto, $ v - iw $ es un vector propio de $ A $ correspondiente al valor propio $ a - ib $.
+
+\end{document}
